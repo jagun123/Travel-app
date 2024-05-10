@@ -18,6 +18,18 @@
       "supportsTablet": true
     },
     "android": {
+      "googleServicesFile": "./google-services.json",
+      "package": "com.example.travelapp", 
+      "plugins": [
+        "@react-native-firebase/app",
+        "@react-native-firebase/auth",
+        "@react-native-google-signin/google-signin"
+      ],
+      "config": {
+        "googleMaps": {
+          "apiKey": "d8f0385e13154bde8933eb7cc2a066f3"
+        }
+      },
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
@@ -25,6 +37,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "bd38c4fb-913a-467f-89fe-a37f2fbec28a"
+      }
+    },
+    "owner": "jagun"
   }
 }
